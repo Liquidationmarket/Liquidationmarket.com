@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__link {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.0rem, $weight: normal, $style: normal);
+  //list-style: none;
+  padding: 0 69px;
+
+  .item__link {
+    color: $color-white;
+  }
+}
+
+.navigation__link-footer {
+  @extend %font-prim;
+  @include font($size: 2.0rem, $height: 2.4rem, $weight: normal, $style: normal);
+  padding-bottom: 46px;
+
+  .item__link-footer {
+    color: $color-white;
+
+    &:hover {
+      text-decoration: underline;
+      @extend %transition;
+    }
+  }
+}

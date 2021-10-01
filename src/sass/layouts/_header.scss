@@ -1,0 +1,39 @@
+.header {
+  background: $color-primary;
+  padding-left: 70px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-tablet {
+    //padding-left: 24px;
+  }
+
+}
+
+.header__logo {
+  margin-right: 61px;
+}
+
+.header__navigation {
+  background: #001F4D;
+  display: flex;
+  min-height: 123px;
+  width: -webkit-fill-available;
+  min-width: 890px;
+
+  @include  media-tablet {
+    display: none;
+  }
+}
+
+.header__link-reg {
+  background: #367AF5;
+  min-width: 235px;
+  height: 123px;
+  align-items: center;
+  display: flex;
+}

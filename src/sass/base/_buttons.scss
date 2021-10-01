@@ -1,0 +1,55 @@
+.btn {
+  width: 151px;
+  height: 52px;
+  background: #367AF5;
+  border-radius: 3px;
+  border: none;
+
+  @extend %font-prim;
+  @include font($size: 1.8rem, $height: 2.0rem, $weight: 500, $style: normal);
+
+  color: $color-white;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-background-header;
+    @extend %transition;
+  }
+
+  @include media-tablet {
+    width: 168px;
+  }
+
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  @extend %font-prim;
+  @include font($size: 1.8rem, $height: 2.0rem, $weight: 500, $style: normal);
+  color: $color-white;
+  cursor: pointer;
+  padding-left: 62px;
+
+  &:hover {
+    text-decoration: underline;
+    @extend %transition;
+  }
+}
+
+.link {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 1.9rem, $weight: normal, $style: normal);
+
+  color: $color-text-additional;
+  text-shadow: $text-shadow;
+
+  &:hover {
+    text-decoration: underline $color-white;
+    @extend %transition;
+  }
+}
+
+.link-buy {
+  padding-right: 47px;
+}

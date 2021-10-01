@@ -1,0 +1,31 @@
+.footer {
+  padding: 0 0 0 65px;
+  margin: 102px 0 0 0;
+  //height: 365px;
+  background: $color-primary;
+
+  @include media-tablet {
+    padding: 0 65px 0 65px;
+  }
+}
+
+.footer__wrapper {
+  padding: 67px 334px 0 0;
+
+  @include media-tablet {
+    padding: 67px 0;
+  }
+}
+
+.footer__title {
+  color: $color-white;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+  }
+}

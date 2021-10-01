@@ -1,0 +1,29 @@
+.layout-5-column {
+  //flex-wrap: nowrap;
+  @include columns($width: 21%);
+  @include media-tablet {
+    flex-wrap: wrap;
+  }
+}
+
+.layout-3-column {
+  @include columns($width: 30%);
+  &:after {
+    content: '';
+    display: block;
+    width: 30%;
+  }
+  @include media-tablet {
+    justify-content: normal;
+    flex-direction: column;
+  }
+}
+
+.layout-2-column {
+  @include columns($width: 48%);
+
+  @include media-tablet {
+    display: block;
+  }
+}
+

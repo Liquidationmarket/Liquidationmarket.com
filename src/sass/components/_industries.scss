@@ -1,0 +1,35 @@
+.industries {
+  padding: 45px 65px;
+}
+
+.industries__title {
+  max-width: 551px;
+  //margin: auto;
+  margin-bottom: 49px;
+}
+
+// block industries
+
+.industry {
+  max-width: 236px;
+  background: $color-additional;
+  border-radius: 5px;
+  //margin-right: 33px;
+
+  &:hover {
+    background: $color-background-header-additional;
+  }
+
+  @include media-tablet {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+}
+
+.industry__content {
+  padding: 37px 26px 30px 26px;
+}
+
+.industry__title {
+  margin-bottom: 54px;
+}

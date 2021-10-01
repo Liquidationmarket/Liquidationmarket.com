@@ -1,0 +1,42 @@
+.buy {
+  margin: 84px 0;
+  padding: 0 0 0 65px;
+}
+
+.buy__text {
+  max-width: 408px;
+  margin-top: 34px;
+  margin-bottom: 74px;
+  @include font($size: 2.4rem, $height: 2.9rem, $weight: 600, $style: normal);
+  color: $color-black;
+
+  @include media-tablet {
+    max-width: none;
+  }
+}
+
+.buy__block {
+  max-width: 447px;
+  background: $color-additional;
+  border-radius: 5px;
+  margin-right: 33px;
+
+  @include media-tablet {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+}
+
+.buy__block-content {
+  padding: 56px 37px 35px 65px;
+}
+
+.buy__block-text {
+  max-width: 400px;
+  @include font($size: 2.0rem, $height: 2.4rem, $weight: normal, $style: normal);
+  color: $color-black;
+
+  @include media-tablet {
+    max-width: none;
+  }
+}
