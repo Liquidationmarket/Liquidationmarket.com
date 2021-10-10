@@ -1,0 +1,30 @@
+.main__wrapper {
+  padding: 0 0 0 65px;
+}
+
+.main__nav {
+  background-color: #F4F5FA;
+  display: flex;
+  justify-content: end;
+  padding: 19px 0 31px 0;
+  align-items: center;
+}
+
+
+.main__nav-text {
+  display: flex;
+  justify-content: center;
+}
+
+.main__nav-title {
+  @include font($size: 1.8rem, $height: 2.0rem, $weight: normal, $style: normal);
+  color: $color-black;
+  margin-right: 51px;
+}
+
+.main__nav-icon {
+  display: flex;
+  margin-left: 154px;
+  margin-top: 18px;
+  margin-right: 40px;
+}

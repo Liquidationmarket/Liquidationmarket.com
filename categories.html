@@ -1,0 +1,309 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Liquidation Market Categories</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+<!--    <link rel="manifest" href="site.webmanifest">-->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/sass/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="wrapper header__wrapper">
+        <div class="header__logo">
+            <a href="#" class="logo">
+                <object type="image/svg+xml" data="src/img/logo.svg" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
+        </div>
+
+        <nav class="header__navigation">
+            <ul class="navigation">
+                <li class="navigation__link"><a href="#" class="item__link">Категории</a></li>
+                <li class="navigation__link"><a href="#" class="item__link">Компания</a></li>
+                <li class="navigation__link"><a href="#" class="item__link">Аукционны</a></li>
+                <li class="navigation__link"><a href="#" class="item__link">О нас</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__link-reg">
+            <a class="link-button" href="#">Регистрация</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main__nav">
+        <div class="main__nav-text">
+            <a href="#" class="main__nav-title">Доставка и оплата</a>
+            <a href="#" class="main__nav-title">Поддержка</a>
+            <a href="#" class="main__nav-title">Гарантии и возврат</a>
+            <a href="#" class="main__nav-title">Контакты</a>
+        </div>
+        <div class="main__nav-icon">
+            <span class="ico ico-user"></span>
+            <span class="ico ico-basket"></span>
+        </div>
+    </div>
+
+    <div class="wrapper main__wrapper">
+
+        <div class="research">
+            <div class="research__form">
+                <form action='#'>
+                    <label for="object"></label>
+                    <select name="object" id="object">
+                        <option value="all">Везде</option>
+                        <option value="">Везде</option>
+                        <option value="">Везде</option>
+                        <option value="">Везде</option>
+                    </select>
+                    <label>
+                        <input type="text" class="input input-search" placeholder="Наименованию лота, название">
+                    </label>
+                    <button type="button" class="btn btn-research">Поиск</button>
+                </form>
+            </div>
+            <h1>Автомобили</h1>
+        </div>
+
+        <hr />
+
+        <aside class="categories">
+            <ul class="categories__list-price">
+                <li class="list__item-major"><span>Цена</span>
+                    <form>
+                        <div class="price-range">
+                            <input type="number" class="input-price-range"  placeholder="От">
+                            <input type="number" class="input-price-range"  placeholder="До">
+                        </div>
+                        <input type="range" id="b" name="b" value="10000" placeholder="До"/>
+                        <output name="result" for="a b"></output>
+                    </form>
+                </li>
+                <li class="list__item-major"><span>Категории</span>
+                    <ul class="categories__list">
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle1" value="Avia">
+                            <label for="vehicle1"> Авиационная <br> промышленность</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle2" value="Avto">
+                            <label for="vehicle2"> Автомобильная <br> промышленность</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle3" value="Chemistry">
+                            <label for="vehicle3"> Химическая <br> промышленность</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle4" value="Construction">
+                            <label for="vehicle4"> Строительство</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle5" value="Metallurgy">
+                            <label for="vehicle5"> Металлургическая <br> промышленность</label><br>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item-major"> <span>Состояние</span>
+                    <ul class="categories__list-state">
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle6" value="New">
+                            <label for="vehicle6"> Новое</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle7" value="Perfect">
+                            <label for="vehicle7"> Хорошее состояние</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle8" value="How new">
+                            <label for="vehicle8"> Как новое</label><br>
+                        </li>
+                        <li class="list__item">
+                            <input type="checkbox" name="vehicle9" value="Bad perfect">
+                            <label for="vehicle9"> Плохое состояние</label><br>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+
+        <div class="cards">
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="src/img/car.jpg" alt="photo object" width="216" height="173">
+                <div class="card__text">
+                    <h3 class="card__title">KIA Rio седан</h3>
+                    <h2 class="card__price">586 000 Руб.</h2>
+                </div>
+            </article>
+
+            <hr />
+
+            <div class="card-page">
+                <span class="card-page-number">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">...</a>
+                    <a href="#">10</a>
+                </span>
+                <span class="card-page-number next">
+                    <a href="#">Следующая страница</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="footer__navigation">
+            <ul>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Служба поддержки</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Как купить?</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Как продать?</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">FAQ</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Стать продавцом</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Доставка</a></li>
+                <li class="navigation__link-footer">
+                    <a href="#" class="item__link-footer">
+                        <object type="image/svg+xml" data="src/img/logo.svg" class="logo-object">
+                            Your browser does not support SVG
+                        </object>
+                    </a>
+            </ul>
+            <ul>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">О LM</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Пользовательское соглашение</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Политика конфиденциальности</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Подписаться на нас</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Наши партнеры</a></li>
+                <li class="navigation__link-footer"><a href="#" class="item__link-footer">Наши партнеры</a></li>
+                <!--            <li class="navigation__link-footer">-->
+                <!--              <a href="#" class="item__link-footer">-->
+                <!--                <img src="src/img/logoDP.png" alt="logo" height="640" width="640">-->
+                <!--              </a>-->
+                <!--            </li>-->
+
+<!--                </li>-->
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>

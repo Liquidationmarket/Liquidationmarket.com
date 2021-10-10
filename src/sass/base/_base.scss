@@ -12,6 +12,13 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 h1 {
@@ -50,4 +57,20 @@ input[type="text"], input[type="email"], textarea[type="text"] {
   padding-left: 24px;
 
   color: rgba(0, 0, 0, 0.7);
+}
+
+select {
+  width: 96.83px;
+  height: 46px;
+
+
+  background: #F4F5FA;
+  border-radius: 3px;
+
+  @extend %font-prim;
+  @include font($size: 1.4rem, $height: 1.4rem, $weight: normal, $style: normal);
+
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.3);
 }

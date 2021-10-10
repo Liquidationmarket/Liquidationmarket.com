@@ -53,3 +53,23 @@
 .link-buy {
   padding-right: 47px;
 }
+
+.btn-research {
+  width: 137.77px;
+  height: 46.96px;
+  border-radius: 2px;
+  background: $color-white;
+  border: 1px solid #001F4D;
+
+  @include font($size: 1.4rem, $height: 2.0rem, $weight: normal, $style: normal);
+
+  text-align: center;
+  color: $color-black;
+
+
+  &:active {
+    background: $color-background-header;
+    color: $color-white;
+    @extend %transition;
+  }
+}

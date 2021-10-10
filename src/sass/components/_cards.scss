@@ -1,0 +1,46 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  //max-width: 1667px;
+}
+
+.card {
+  max-width: 268px;
+  max-height: 310px;
+  padding: 23px 25px 41px 28px;
+  background: $color-additional;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+}
+
+.card__title {
+  @include font($size: 1.8rem, $height: 2.0rem, $weight: normal, $style: normal);
+  color: $color-text-additional;
+}
+
+.card__price {
+  @include font($size: 2.0rem, $height: 2.0rem, $weight: 600, $style: normal);
+  color: $color-black;
+}
+
+.card-page {
+  margin-top: 37px;
+  margin-right: 32px;
+  width: 98%;
+}
+
+.card-page-number {
+  text-align: left;
+  a {
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.0rem, $weight: normal, $style: normal);
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 8px;
+  }
+}
+
+.card-page-number.next {
+  float: right;
+  text-align: right;
+}

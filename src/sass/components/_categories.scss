@@ -1,0 +1,58 @@
+.categories {
+  float: left;
+  //width: 315px;
+  margin-right: 78px;
+}
+
+
+.list__item-major {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.0rem, $weight: 600, $style: normal);
+  color: $color-black;
+
+
+  //border-top: 1px solid rgba(0, 0, 0, 0.2);
+  //border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  //
+  //padding: 18px 0;
+
+
+}
+
+.list__item-major span {
+  position: relative;
+  cursor: pointer;
+}
+
+.list__item-major span::before {
+  content: "";
+  background-image: url("../img/icons/arrow_up.svg");
+  position: absolute;
+  width: 7.02px;
+  height: 4px;
+  left: 214px;
+  top: 9px;
+}
+
+.price-range:first-child {
+
+}
+
+.input-price-range {
+  width: 79px;
+  height: 30px;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+
+  &:first-child {
+    margin-right: 29px;
+  }
+}
+
+.list__item {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.0rem, $weight: normal, $style: normal);
+  color: $color-black;
+
+  padding-bottom: 17px;
+}
